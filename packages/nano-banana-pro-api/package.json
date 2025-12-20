@@ -1,0 +1,21 @@
+{
+  "name": "nano-banana-pro-api",
+  "version": "0.1.0",
+  "description": "Minimal TypeScript SDK for the Nano Banana Pro Image API.",
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "rollup -c",
+    "type-check": "tsc --noEmit"
+  }
+}

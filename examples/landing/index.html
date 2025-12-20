@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nano Banana Pro API - Visual Engine for Precise Image Synthesis</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="noise-layer"></div>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">NB</span>
+        <span class="brand-name">Nano Banana Pro</span>
+      </div>
+      <nav class="topnav">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#api">API</a>
+        <a href="#benchmarks">Benchmarks</a>
+        <button class="ghost">Request Access</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Image Intelligence Platform</p>
+          <h1>
+            Nano Banana Pro API
+            <span class="accent">Precision image synthesis</span>
+          </h1>
+          <p class="lead">
+            A production-grade image generation and editing engine built for teams that demand
+            accuracy, typography fidelity, and repeatable visuals. Designed to keep brand outputs
+            consistent under real world constraints.
+          </p>
+          <div class="hero-actions">
+            <button class="primary">Get API Key</button>
+            <button class="secondary">View Docs</button>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">Response time</span>
+              <span class="meta-value">8-12s</span>
+            </div>
+            <div>
+              <span class="meta-label">Text accuracy</span>
+              <span class="meta-value">94%</span>
+            </div>
+            <div>
+              <span class="meta-label">Max output</span>
+              <span class="meta-value">4K</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-card">
+            <p class="panel-title">Creative Console</p>
+            <div class="panel-screen">
+              <div class="panel-line">model: nano-banana-pro-image</div>
+              <div class="panel-line">aspect_ratio: 4:3</div>
+              <div class="panel-line">style: editorial-lighting</div>
+              <div class="panel-line">prompt: "matte ceramic speaker"</div>
+              <div class="panel-output">
+                <div class="panel-orb"></div>
+                <div class="panel-grid"></div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-foot">
+            <span>Multi-reference composition</span>
+            <span>Physics-aware lighting</span>
+            <span>Brand-safe pipelines</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="capabilities" class="capabilities">
+        <div class="section-header">
+          <h2>Built for design systems at scale</h2>
+          <p>
+            Nano Banana Pro turns high-fidelity concepts into controlled, brand-consistent imagery.
+            Use it for campaign assets, product shots, and visual UI mockups without manual touchups.
+          </p>
+        </div>
+        <div class="cap-grid">
+          <article class="cap-card">
+            <h3>Exact typography</h3>
+            <p>Legible copy, precise kerning, and reliable glyph placement across 30+ languages.</p>
+          </article>
+          <article class="cap-card">
+            <h3>Reference stacking</h3>
+            <p>Blend up to 14 inputs while preserving subject identity and lighting logic.</p>
+          </article>
+          <article class="cap-card">
+            <h3>Material realism</h3>
+            <p>Photographic highlights, surface response, and physically-correct reflections.</p>
+          </article>
+          <article class="cap-card">
+            <h3>Composable edits</h3>
+            <p>Targeted image edits, mask-based changes, and safe partial regeneration.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="api" class="api">
+        <div class="section-header">
+          <h2>API at a glance</h2>
+          <p>Keep your pipeline predictable with a clean, async task model.</p>
+        </div>
+        <div class="api-grid">
+          <div class="api-card">
+            <p class="api-title">Create image task</p>
+            <pre><code>POST /v1/images/generations
+{
+  "model": "nano-banana-pro-image",
+  "prompt": "luxury watch on basalt",
+  "aspect_ratio": "4:3",
+  "size": "1536x1024"
+}</code></pre>
+          </div>
+          <div class="api-card">
+            <p class="api-title">Poll for results</p>
+            <pre><code>GET /v1/tasks/:id
+{
+  "status": "completed",
+  "progress": 100,
+  "results": [
+    {"url": "https://..."}
+  ]
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="benchmarks" class="benchmarks">
+        <div class="bench-card">
+          <div>
+            <h2>Performance benchmarks</h2>
+            <p>
+              Tuned for studio workflows with predictable runtimes and low variance across prompt
+              complexity.
+            </p>
+          </div>
+          <div class="bench-metrics">
+            <div>
+              <span class="metric-value">0.24</span>
+              <span class="metric-label">USD per 4K image</span>
+            </div>
+            <div>
+              <span class="metric-value">14</span>
+              <span class="metric-label">Ref images supported</span>
+            </div>
+            <div>
+              <span class="metric-value">5+</span>
+              <span class="metric-label">People per scene</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <span class="brand-mark">NB</span>
+        <span class="footer-copy">Nano Banana Pro API. Built for teams that ship visuals.</span>
+      </div>
+      <button class="ghost">Start a demo</button>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
